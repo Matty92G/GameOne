@@ -1,6 +1,7 @@
 export default class Place {
-  constructor(name, one, two, three) {
+  constructor(name, shops, activities) {
     this.name = name;
-    this.availableActivities = { one: one, two: two, three: three };
+    this.shops = [...shops];
+    this.availableActivities = [...activities];
   }
 }
